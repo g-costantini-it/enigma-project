@@ -1,0 +1,58 @@
+.strip {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: #fff;
+  opacity: .2;
+  z-index: 0;
+
+  &--120 {
+    height: 120% !important;
+  }
+
+  &--300 {
+    height: 300% !important;
+  }
+
+  &--400 {
+    height: 400%;
+  }
+
+  &--500 {
+    height: 500%;
+  }
+
+  &--left {
+    left: 10%;
+
+
+  }
+
+  &--center {
+    left: 42%;
+  }
+
+  &--right {
+    right: 21%;
+
+  }
+
+  &--20 {
+    left: 8%;
+    height: 630%;
+  }
+
+  &--50 {
+    left: 50%;
+    height: 630%;
+    z-index: 0;
+  }
+
+  &--70 {
+    left: 92%;
+    height: 630%;
+  }
+
+
+
+}

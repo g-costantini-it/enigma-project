@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Digital web agency specialized in e-commerce solutions for businesses by providing fast websites and web app" />
+  <meta name="keywords"
+    content="digital agency, web agency, web marketing, deep marketing, ux research, e-commerce, web development, growth hacking" />
+  <meta name="language" content="en" />
+
+  <title>Enigma | Web Agency</title>
+  <link rel="shortcut icon" href="./img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Muli:wght@900&family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.2.0/turbolinks.js" data-turbolinks-track="reload">
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+
+  <script src="js/slick/slick.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="js/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css">
+
+</head>
+
+<body>
+
+  <div class="overlay">
+
+    <h1>A NEW EXPERIENCE</h1>
+
+  </div>
+
+  <div class="strips">
+    <div class="strip strip--left"></div>
+    <div class="strip strip--center"></div>
+    <div class="strip strip--right"></div>
+  </div>
+
+  <main id="home" class="main-wrapper" role="main">
+
+
+    <div class="social-media">
+      <ul>
+        <li class="social-media__item"><a href="https://www.facebook.com/">Facebook</a></li>
+        <li class=" social-media__item"><a href="https://twitter.com/">Twitter</a></li>
+        <li class="social-media__item"><a href="https://instagram.com/">Instagram</a></li>
+
+      </ul>
+    </div>
+
+    <!-- ========================= HERO SECTION ========================-->
+    <section class="hero">
+
+      <div class="hero-img"></div>
+
+      <div class="hero-caption">
+        <h1 data-text="Digital reality exists">Digital<br>reality<br>exists</h1>
+        <h2 data-text="Your brand matters">your brand matters</h2>
+        <div class="cta">
+          <span><a class="cta-anchor btn btn-outline-light" role="button" href="./services.html">GET
+              STARTED</a></span>
+        </div>
+      </div>
+    </section>
+
+    <nav class="nav">
+      <span id="brand">
+        <a href="index.html">ENIGMA</a>
+      </span>
+
+      <ul id="menu">
+        <li class="active"><a href="#home">Home</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./about.html">About us</a></li>
+        <li><a href="./works.html">Works</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+
+      <div id="toggle">
+        <div class="span"><a>menu</a></div>
+      </div>
+
+    </nav>
+
+    <div id="resize">
+      <div class="close-btn">close</div>
+
+      <ul id="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./about.html">About us</a></li>
+        <li><a href="./works.html">Works</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!--------------- navbar ends here --------------->
+  </main>
+
+  <script>
+    TweenMax.to(".overlay h1", 2, {
+      opacity: 0,
+      y: -60,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.to(".overlay", 1.5, {
+      delay: .8,
+      top: "-80%",
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from("#brand", 1, {
+      delay: .8,
+      opacity: 0,
+      y: 20,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.staggerFrom("#menu li, #toggle .span ", 1, {
+      delay: 1,
+      opacity: 0,
+      y: 20,
+      ease: Expo.easeInOut
+    }, 0.2)
+
+    TweenMax.from(".hero-img", 2, {
+      delay: 1.2,
+      opacity: 0,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.staggerFrom(".social-media ul li", 1, {
+      delay: 1.4,
+      opacity: 0,
+      y: 20,
+      ease: Expo.easeInOut
+    }, 0.2)
+
+    TweenMax.from(".strip", 2, {
+      delay: 1.6,
+      opacity: 0,
+      y: 40,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".hero-caption h1", 2, {
+      delay: 1.8,
+      opacity: 0,
+      y: 20,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".hero-caption h2", 2, {
+      delay: 2.2,
+      opacity: 0,
+      y: 20,
+      ease: Expo.easeInOut
+    })
+
+    TweenMax.from(".cta-anchor", 2, {
+      delay: 2.2,
+      opacity: 0,
+      y: 20,
+      ease: Expo.easeInOut
+    })
+  </script>
+
+
+  <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

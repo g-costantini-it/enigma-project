@@ -1,0 +1,19 @@
+.more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 6rem 0 6rem 0;
+}
+
+.more h1 {
+  font-size: 2.8rem;
+  font-family: 'Monument', sans-serif;
+  padding-bottom: .5rem;
+}
+
+@media(max-width: 425px) {
+  .more {
+    padding: 4rem 0 2rem 0;
+  }
+}

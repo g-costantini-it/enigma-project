@@ -1,0 +1,43 @@
+.btn-primary,
+.btn-primary:active,
+.btn-primary:visited {
+  background-color: #CAC9DB !important;
+  color: black !important;
+  border: #fff !important;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: .4rem 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.btn-primary:hover {
+  background-color: #706fd3 !important;
+  color: #fff !important;
+}
+
+.btn-outline-secondary {
+  font-size: 1rem;
+  padding: .4rem 1rem;
+  text-transform: uppercase;
+}
+
+.btn-outline-light {
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+}
+
+.btn-outline-light a {
+  text-decoration: none;
+
+}
+
+.btn-outline-light a:hover {
+  color: blueviolet;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #fff;
+  color: black !important;
+}

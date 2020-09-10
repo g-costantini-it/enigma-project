@@ -1,0 +1,19 @@
+.social-media {
+  position: absolute;
+  left: -10rem;
+  top: 45%;
+  transform: rotate(-90deg);
+
+  &__item {
+    display: inline-flex;
+    font-size: .8rem;
+    letter-spacing: 0.05rem;
+  }
+
+  &__item a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin-right: 4rem;
+
+  }
+}

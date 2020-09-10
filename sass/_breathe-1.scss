@@ -1,0 +1,95 @@
+/* ============ BREATHE-1  ============ */
+
+#fixed {
+  background-image: url('../img/gggggggg.jpg');
+  background-size: cover;
+  background-position: bottom;
+  mix-blend-mode: overlay;
+  opacity: .9;
+}
+
+.bg-color {
+  background-color: rgb(72, 48, 116);
+  width: 100%;
+  height: 100%;
+}
+
+.breathe-1 {
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 12%;
+
+  &__heading {
+    font-family: 'Monument', sans-serif;
+    font-size: 4.5rem;
+    letter-spacing: 0rem;
+    line-height: 5rem;
+  }
+
+  &__subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 0.15rem;
+    padding-bottom: .5rem;
+    color: #c990ff;
+    text-transform: uppercase;
+    opacity: .9;
+  }
+
+  &__paragraph {
+    font-size: 1.6rem;
+    letter-spacing: 0.02rem;
+    line-height: 200%;
+  }
+
+
+}
+
+
+@media (max-width: 968px) {
+  .breathe-1 {
+    padding-left: 3rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .breathe-1 {
+    padding: 0 4rem 0 3rem;
+    position: relative;
+    justify-content: start;
+    bottom: -15rem;
+
+  }
+
+  .breathe-1__heading {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .breathe-1__subtitle {
+    font-size: 1rem;
+    letter-spacing: 0.25rem;
+    color: #c7a4ff;
+    line-height: 140%;
+    padding-bottom: 0rem;
+
+  }
+
+  .breathe-1__paragraph {
+    display: none;
+  }
+}
+
+@media (max-width: 350px) {
+  .breathe-1 {
+    padding: 0 3rem 0 1rem;
+  }
+
+  .breathe-1__heading {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+}

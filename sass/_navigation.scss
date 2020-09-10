@@ -1,0 +1,211 @@
+/*--- NAV Scrolling offset --*/
+.offset:before {
+      /*height: 4rem;
+  margin-top: -4rem;*/
+      content: "";
+      display: block;
+}
+
+
+/*--------------- navigation --------------- */
+
+.nav {
+      width: 100%;
+      height: 3.75rem;
+      position: fixed;
+      z-index: 2;
+}
+
+.nav.scrolled {
+      background-color: #070707 !important;
+      transition: background-color 500ms linear;
+}
+
+.nav #brand {
+      display: block;
+      margin-left: 2.5rem;
+      line-height: 3.75rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 1.4rem;
+}
+
+.nav #brand a {
+      transition: all 500ms ease-out;
+}
+
+.nav #brand a:hover {
+      text-decoration: none;
+      color: rgb(181, 130, 240);
+}
+
+.nav #menu {
+      right: 3.5rem;
+      position: fixed;
+}
+
+.nav #menu li {
+      padding-left: 2.5rem;
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: .8rem;
+      padding-top: 1.35rem;
+      /*line-height: 3.75rem;*/
+      transition: all 500ms ease-out;
+}
+
+.nav #menu li a {
+      color: rgb(173, 173, 173);
+      transition: all 500ms ease-out;
+}
+
+.nav #menu li a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 1.5px;
+      opacity: 0;
+      transition: width .3s;
+}
+
+.nav #menu li a:hover::after {
+      width: 100%;
+      background: white;
+      opacity: 1;
+      display: block;
+      transition: width .3s;
+}
+
+.nav #menu li a:hover {
+      text-decoration: none;
+      color: #fff;
+      transition: all 500ms ease-out;
+}
+
+.nav #menu li.active a {
+      color: #fff;
+      cursor: none;
+}
+
+.nav #menu li.active a::after {
+      display: none;
+}
+
+@media (max-width: 996px) {
+      .nav #menu li a:hover::after {
+            display: none;
+      }
+}
+
+#toggle {
+      position: absolute;
+      right: 2.5rem;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.025em;
+      line-height: 2.8rem;
+      z-index: 2;
+      width: 1.8rem;
+      height: 1.8rem;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+      visibility: hidden;
+      opacity: 0;
+}
+
+.close-btn {
+      position: absolute;
+      right: 1.5rem;
+      font-weight: 300;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.025em;
+      z-index: 2;
+      cursor: pointer;
+      line-height: 3.8rem;
+}
+
+#resize {
+      z-index: 2;
+      top: 0px;
+      position: fixed;
+      background: #050505;
+      width: 100%;
+      height: 100%;
+      visibility: hidden;
+      opacity: 0;
+      transition: all .5s ease-out;
+
+}
+
+#resize #menu {
+      height: 100vh;
+      position: absolute;
+      left: 42.5%;
+      transform: translateX(-40%);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+
+      vertical-align: center;
+}
+
+#resize #menu li {
+      display: block;
+      text-align: center;
+      padding: 1.4rem 0;
+      font-size: 1.2rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      min-height: 2rem;
+      transition: all 0.3s ease-out;
+}
+
+#resize li:nth-child(1) {
+      margin-top: 15vh;
+}
+
+#resize #menu li a {
+      color: #fff;
+}
+
+#resize #menu li a:hover {
+      text-decoration: none;
+}
+
+#resize.active {
+      visibility: visible;
+      opacity: 1;
+}
+
+@media(max-width: 900px) {
+      #toggle {
+            visibility: visible;
+            opacity: 1;
+            margin-top: .35rem;
+            margin-right: .2rem;
+      }
+
+      nav #brand {
+            margin-left: 1rem;
+      }
+
+
+
+      nav #menu {
+            display: none;
+      }
+}
+
+@media(min-width: 900px) {
+      #resize {
+            visibility: hidden !important;
+      }
+}
+
+@media(max-width: 425px) {
+      .nav #brand {
+            margin-left: 1rem;
+      }
+
+}
